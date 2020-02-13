@@ -1,0 +1,16 @@
+.welcome {
+    height: auto;
+    max-width: 100%;
+    background-color: rgb(56, 97, 209);
+}
+.position-middle {
+    left: 50%;
+    top: 50%;
+}
+body {
+    font-family: 'Sriracha', cursive;
+}
+.welcome img {
+    object-fit: cover;
+    height: 100vh;
+}
