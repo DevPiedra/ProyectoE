@@ -3,6 +3,9 @@
     max-width: 100%;
     background-color: rgb(56, 97, 209);
 }
+.bg-sky{
+    background-color: skyblue;
+}
 .position-middle {
     left: 50%;
     top: 50%;
@@ -14,6 +17,14 @@ body {
 .welcome img {
     object-fit: cover;
     height: 100vh;
+}
+.fondohome {
+    background-image: url(../img/home02.jpg);
+    background-size: 100%;
+    width: 100% ;
+    min-height: 300px;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 /* .carousel-item img {
     height: 15vh;
