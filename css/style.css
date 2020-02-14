@@ -29,11 +29,6 @@ body {
     object-fit: cover;
     background-repeat: no-repeat;
 }
-/* .carousel-item img {
-    height: 15vh;
-    max-width: 100%;
-    object-fit: cover;
-} */
 .pictfront img {
     height: 20vh;
     max-width: 100%;
