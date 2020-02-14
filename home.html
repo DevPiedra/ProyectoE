@@ -54,9 +54,9 @@
     <div class="col-4">
         <div class="row justify-content-center mt-2">
             <div class="list-group ">
-                <a href="#" class="list-group-item list-group-item-action">LG MiniSplit</a>
-                <a href="#" class="list-group-item list-group-item-action">Whynter MiniSplit</a>
-                <a href="#" class="list-group-item list-group-item-action">Telstar MiniSplit</a>
+                <a href="#" onclick="changeDiv(1)" class="list-group-item list-group-item-action">LG MiniSplit</a>
+                <a href="#" onclick="changeDiv(2)" class="list-group-item list-group-item-action">Whynter MiniSplit</a>
+                <a href="#" onclick="changeDiv(3)" class="list-group-item list-group-item-action">Telstar MiniSplit</a>
                 <a href="#" class="list-group-item list-group-item-action">Otros</a>
             </div>
         </div>
@@ -95,16 +95,42 @@
         </div>
         <div class="dropdown-divider"></div>
         <div class="row  justify-content-center">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" id="Op1" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h3 class="card-title">Card title</h3>
+                            <h3 class="card-title">LG MiniSplit</h3>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <img src="./img/mslg01.jpg" class="card-img" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" id="Op2" style="display: none; max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Whynter MiniSplit</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/msts01.jpg" class="card-img" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" id="Op3" style="display: none; max-width: 540px;">
+                <div class="row no-gutters">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Telstar MiniSplit</h3>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-2">
+                        <img src="./img/mswh01.jpg" class="card-img" alt="...">
                     </div>
                 </div>
             </div>
