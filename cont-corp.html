@@ -21,12 +21,7 @@
 <!-- NavBar -->
 <nav class="navbar navbar-light bg-grass">
     <form class="form-inline">
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">@</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
+        <a class="btn btn-primary" href="signup.html" role="button">Inicie Sesion</a>
     </form>
     <div class="mr-2">
         <a href="index.html" class="lead btn btn-outline-dark">Inicio</a>
@@ -74,8 +69,45 @@
         </div>
     </div>
     <div class="col-6">
-        <div class="row pictfront my-2 justify-content-center">
-            <img src="./img/home02.jpg" alt="">
+<!-- Default form contact -->
+    <form class="text-center border border-light p-2" action="#!">
+        <p class="h3 mb-2">Contactenos</p>
+    
+        <!-- Name -->
+        <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Nombre">
+        <!-- Empresa -->
+        <!-- <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Empresa"> -->
+        <!-- Email -->
+        <input type="email" id="defaultContactFormEmail" class="form-control mb-2" placeholder="E-mail">
+    
+        <!-- Subject -->
+        <label class="h6">Tema</label>
+        <select class="browser-default custom-select mb-2">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>Comentarios</option>
+            <option value="2">Cotizacion</option>
+            <option value="3">Consultas</option>
+            <option value="4">Pedido Especial</option>
+        </select>
+    
+        <!-- Message -->
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="2" placeholder="Mensaje"></textarea>
+        </div>
+    
+        <!-- Copy -->
+        <div class="custom-control custom-checkbox mb-2">
+            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+            <label class="custom-control-label" for="defaultContactFormCopy">Enviarme copia del mensaje</label>
+        </div>
+    
+        <!-- Send button -->
+        <button class="btn btn-info btn-block" type="submit">Send</button>
+    
+    </form>
+  
+    <!-- <div class="row pictfront my-2 justify-content-center">
+            <img src="./img/home02.jpg" alt=""> -->
             <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -99,7 +131,7 @@
             </div> -->
         </div>
         <div class="dropdown-divider"></div>
-        <div class="row  justify-content-center">
+        <!-- <div class="row  justify-content-center">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-8">
@@ -112,9 +144,9 @@
                         <img src="./img/mslg01.jpg" class="card-img" alt="...">
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
-    </div>
+    </div>-->
 </div>
 </section>
 <!-- Footer -->
