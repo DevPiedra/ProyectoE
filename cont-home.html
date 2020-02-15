@@ -50,62 +50,60 @@
 </div>
 <!-- Desglose Productos -->
 <section class="productos bg-transparent container-fluid p-4">
-<div class="row text-body">
-    <div class="col-4">
-        <div class="row justify-content-center mt-2">
-            <div class="list-group ">
-                <a href="#" class="list-group-item list-group-item-action">LG MiniSplit</a>
-                <a href="#" class="list-group-item list-group-item-action">Whynter MiniSplit</a>
-                <a href="#" class="list-group-item list-group-item-action">Telstar MiniSplit</a>
-                <a href="#" class="list-group-item list-group-item-action">Otros</a>
+    <div class="row text-body">
+        <div class="col-4">
+            <div class="row justify-content-center mt-2">
+                <div class="list-group ">
+                    <a href="#" onclick="changeDiv(1)" class="list-group-item list-group-item-action">Contactenos</a>
+                    <a href="#" onclick="changeDiv(2)" class="list-group-item list-group-item-action">Ubicacion</a>
+                    <a href="#" onclick="changeDiv(3)" class="list-group-item list-group-item-action">Comentarios</a>
+                </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="row justify-content-center mt-2">
+                <form class="form-inline md-form">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-rounded btn-sm my-0" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
-        <div class="dropdown-divider"></div>
-        <div class="row justify-content-center mt-2">
-            <form class="form-inline md-form">
-                <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-rounded btn-sm my-0" type="submit">Buscar</button>
-            </form>
+        <div class="col-6">
+    <!-- Default form contact -->
+    <form class="text-center border border-light p-2" id="Op1" action="#!">
+            <p class="h3 mb-2">Contactenos</p>
+        <!-- Name -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Nombre">
+        <!-- Empresa -->
+            <!-- <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Empresa"> -->
+        <!-- Email -->
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-2" placeholder="E-mail">
+        <!-- Subject -->
+            <label class="h6">Tema</label>
+                <select class="browser-default custom-select mb-2">
+                    <option value="" disabled>Choose option</option>
+                    <option value="1" selected>Comentarios</option>
+                    <option value="2">Cotizacion</option>
+                    <option value="3">Consultas</option>
+                    <option value="4">Pedido Especial</option>
+                </select>
+        <!-- Message -->
+            <div class="form-group">
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="2" placeholder="Mensaje"></textarea>
+            </div>
+        <!-- Copy -->
+            <div class="custom-control custom-checkbox mb-2">
+                <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                <label class="custom-control-label" for="defaultContactFormCopy">Enviarme copia del mensaje</label>
+            </div>
+        <!-- Send button -->
+            <button class="btn btn-info btn-block" type="submit">Send</button>
+    </form>
+    <!-- Maps -->
+    <div class="row" id="Op2" style="display: none;">
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0275062864152!2d-84.42745988583135!3d10.339683769931693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0659b0b2cc0ef%3A0xd0e2f9ce44a21ca6!2sBarrio%20El%20Campo%2C%20Alajuela%20Province%2C%20San%20Carlos!5e0!3m2!1sen!2scr!4v1581734118113!5m2!1sen!2scr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </div>
-    <div class="col-6">
-        <!-- Default form contact -->
-<form class="text-center border border-light p-2" action="#!">
-
-    <p class="h3 mb-2">Contactenos</p>
-
-    <!-- Name -->
-    <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Nombre">
-    <!-- Empresa -->
-    <!-- <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Empresa"> -->
-    <!-- Email -->
-    <input type="email" id="defaultContactFormEmail" class="form-control mb-2" placeholder="E-mail">
-
-    <!-- Subject -->
-    <label class="h6">Tema</label>
-    <select class="browser-default custom-select mb-2">
-        <option value="" disabled>Choose option</option>
-        <option value="1" selected>Comentarios</option>
-        <option value="2">Cotizacion</option>
-        <option value="3">Consultas</option>
-        <option value="4">Pedido Especial</option>
-    </select>
-
-    <!-- Message -->
-    <div class="form-group">
-        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="2" placeholder="Mensaje"></textarea>
-    </div>
-
-    <!-- Copy -->
-    <div class="custom-control custom-checkbox mb-2">
-        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-        <label class="custom-control-label" for="defaultContactFormCopy">Enviarme copia del mensaje</label>
-    </div>
-
-    <!-- Send button -->
-    <button class="btn btn-info btn-block" type="submit">Send</button>
-
-</form>
 <!-- Default form contact -->
     <!-- <form class="" action="">
         <div class="input-group mb-3">
